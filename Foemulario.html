@@ -1,0 +1,54 @@
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    </head>
+    <body>
+           <header>
+                <div class="logo">
+                    <img class="logo" src="Imagenes/logo.jpg"  width="100px" height="100px">
+                </div>
+            <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Foemulario.html">Formulario</a></li>
+                
+            </ul>
+            </nav>
+            </header>
+
+            <aside>
+            <center><h3>DATOS</h3>
+                    <p>
+                <center>
+                     <br/><br/><br/>
+                     <input type="text" placeholder="Nombre..."value=""/><br/><br/>
+                     <input type="text" placeholder="Redes..."value=""/><br/><br/>
+                     <input type="text" placeholder="Telefono..."value=""/><br/><br/>
+                     <input type="submit" value="Aceptar"/>
+                     </form>
+                </center>
+                <script>
+                    var nombre = prompt("Nombre: ")
+                    var redes = prompt("Redes: ")
+                    var telefono = prompt("Teléfono: ")
+                </script>
+                <br>    
+               </p>
+            </article>
+            <article>
+                <script>
+                    console.log("Funciona")
+
+                    function page(){
+                    var doc = new jsPDF();
+                    doc.text(nombre+"  "+redes+"  "+telefono, 10, 10);
+                    doc.save("formulario.pdf");
+                }
+                page();  
+                </script>
+                
+           </aside>

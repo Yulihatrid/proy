@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #c5a3ff;
+    
+}
+
+header, .main, footer{
+    width: 90%;
+    margin: 1% auto;
+   
+}
+
+header nav {
+    background: #B28dff;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    padding: 10px 20px;
+    display:block;
+    color:#fff ;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover{
+    background: #B1B2C2 ;
+}
